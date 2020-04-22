@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Componentes</title>
+</h:head>
+<h:body>
+	<h:outputText value="Componentes de formularios" />
+
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Nome: " />
+			<h:inputText maxlength="30" size="30" />
+
+			<h:outputLabel value="Senha: " />
+			<h:inputSecret maxlength="30" size="30" />
+
+
+			<h:outputLabel value="Mensagem: " />
+			<h:inputTextarea cols="30" rows="5"></h:inputTextarea>
+
+
+			<h:outputLabel value="Hobbie" />
+			<h:selectManyCheckbox>
+				<f:selectItem itemVaue="E" itemLabel="Esportes" />
+				<f:selectItem itemVaue="F" itemLabel="Filme" />
+				<f:selectItem itemVaue="V" itemLabel="Viagens" />
+			</h:selectManyCheckbox>
+
+			<h:outputLabel value="Estado civil" />
+			<h:selectOneRadio>
+				<f:selectItem itemVaue="C" itemLabel="Casado" />
+				<f:selectItem itemVaue="D" itemLabel="Divorciado" />
+				<f:selectItem itemVaue="S" itemLabel="Solteiro" />
+			</h:selectOneRadio>
+
+			<h:outputLabel value="Estado" />
+			<h:selectOneMenu>
+				<f:selectItem itemVaue="MG" itemLabel="Minas Gerais" />
+				<f:selectItem itemVaue="SP" itemLabel="São Paulo" />
+				<f:selectItem itemVaue="GO" itemLabel="Goiás" />
+			</h:selectOneMenu>
+
+		</h:panelGrid>
+		<h:panelGrid columns="4">
+			<h:commandButton value="Salvar" />
+			<h:commandButton value="Editar" />
+			<h:commandButton value="Cancelar" />
+			<h:commandButton value="Fechar" />
+
+			<h:commandLink value="voltar" />
+
+
+
+		</h:panelGrid>
+	</h:form>
+
+
+</h:body>
+</html>
